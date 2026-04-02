@@ -19,6 +19,32 @@ Personal portfolio website built with Next.js, TypeScript, Tailwind CSS, Framer 
 - SEO metadata, sitemap, robots, and social preview images
 - Dark mode support with persistent theme initialization
 
+## Technical Highlights
+
+### Interactive 3D Background
+
+- Custom Three.js background built with React Three Fiber and Drei
+- Layered nebula, particles, stars, and orbiting energy effects instead of a static hero image
+- Client-only mounting for the 3D scene to avoid App Router hydration issues
+
+Why it matters: it shows front-end depth beyond standard component libraries and demonstrates comfort with graphics-heavy UI work.
+
+### Server-Side Contact Form
+
+- Contact form posts to a server-side API route instead of using a third-party embed
+- SMTP delivery handled with Nodemailer on Vercel
+- Includes input validation, sanitization, origin checks, honeypot/timing checks, and rate limiting
+
+Why it matters: it shows full-stack thinking and production-minded handling of real user input.
+
+### Production Readiness
+
+- SEO metadata, sitemap, robots, and social preview images are configured for sharing and indexing
+- Theme preference is persisted and initialized before hydration to avoid flash-of-incorrect-theme issues
+- GitHub Actions runs lint, build, and type checks on pushes and pull requests
+
+Why it matters: it reflects attention to polish, reliability, and the details that affect real users after launch.
+
 ## Tech Stack
 
 - Next.js 15
@@ -49,6 +75,19 @@ public/
   resume.pdf            Public resume asset
   theme-init.js         Theme bootstrapping script
 ```
+
+## Why I Built It This Way
+
+- I load the Three.js background through a dynamic client-only boundary so the visual layer stays rich without fighting server rendering.
+- I initialize the theme before React hydration so dark mode feels intentional instead of flashing on first load.
+- I kept site-wide identity and contact metadata in a shared config file to make future content updates less error-prone.
+- I used a server-side contact route because I wanted the project to demonstrate real backend concerns, not just front-end presentation.
+
+## Key Learnings
+
+- Rich 3D backgrounds are much more stable when they are isolated from SSR and treated as a client-only enhancement.
+- Small serverless endpoints still need the same basics as larger backends: validation, abuse protection, and clear fallbacks.
+- Portfolio projects become stronger when they communicate engineering decisions, not just the final UI.
 
 ## Local Development
 
