@@ -1,19 +1,23 @@
 # Mohit Pandya Portfolio
 
-A personal portfolio website built with Next.js, TypeScript, Tailwind CSS, Framer Motion, and React Three Fiber.
+[![CI](https://github.com/Spixet/Portfolio-website/actions/workflows/ci.yml/badge.svg)](https://github.com/Spixet/Portfolio-website/actions/workflows/ci.yml)
 
-Live site: `https://portfolioo-five-drab.vercel.app`
+Personal portfolio website built with Next.js, TypeScript, Tailwind CSS, Framer Motion, and React Three Fiber.
 
-## Overview
+![Portfolio preview](public/og-image.svg)
 
-This project is a modern developer portfolio with:
+## Live Demo
 
-- a responsive landing page
-- animated UI sections and a Three.js background
-- dedicated About, Projects, Blog, and Contact pages
-- SEO metadata, sitemap, and robots support
-- a production contact form backed by a server-side email route
-- dark mode support and polished motion-heavy interactions
+- Production: `https://portfolioo-five-drab.vercel.app`
+
+## Highlights
+
+- Responsive multi-page portfolio built with the App Router
+- Animated UI with Framer Motion and a custom Three.js background
+- About, Projects, Blog, and Contact pages
+- Secure server-side contact form with SMTP support
+- SEO metadata, sitemap, robots, and social preview images
+- Dark mode support with persistent theme initialization
 
 ## Tech Stack
 
@@ -22,38 +26,31 @@ This project is a modern developer portfolio with:
 - TypeScript
 - Tailwind CSS
 - Framer Motion
-- Three.js
-- React Three Fiber / Drei
+- Three.js / React Three Fiber / Drei
 - Nodemailer
 - Vercel
-
-## Main Sections
-
-- Home: hero, skills, featured projects, contact CTA
-- About: bio and resume download
-- Projects: filterable project listing
-- Blog: static blog cards
-- Contact: social links plus SMTP-backed contact form
 
 ## Project Structure
 
 ```text
 app/
-  about/              About page
-  api/contact/        Contact form API route
-  blog/               Blog page
-  components/         UI sections, Three.js background, shared components
-  contact/            Contact page
-  context/            Theme context
-  lib/                Shared site config
-  projects/           Projects page
+  about/                About page
+  api/contact/          Contact form API route
+  blog/                 Blog page
+  components/           Reusable UI and background components
+  contact/              Contact page
+  context/              Theme context
+  lib/                  Shared site configuration
+  projects/             Projects page
 public/
-  images/             Icons, placeholders, profile assets
-  resume.pdf          Public resume asset
-  theme-init.js       Theme bootstrapping script
+  images/               Icons, placeholders, and profile assets
+  og-image.svg          Open Graph preview image
+  twitter-image.svg     Twitter/X preview image
+  resume.pdf            Public resume asset
+  theme-init.js         Theme bootstrapping script
 ```
 
-## Running Locally
+## Local Development
 
 Install dependencies:
 
@@ -67,7 +64,7 @@ Start the development server:
 npm run dev
 ```
 
-Build for production:
+Run the production build:
 
 ```bash
 npm run build
@@ -77,7 +74,7 @@ npm run build
 
 Create a local env file from `.env.example`.
 
-Mail/contact configuration uses:
+The contact route supports these variables:
 
 - `SMTP_HOST`
 - `SMTP_PORT`
@@ -103,28 +100,21 @@ Production deployment:
 npx vercel --prod
 ```
 
+## Automated Checks
+
+GitHub Actions runs the following on pushes and pull requests to `main`:
+
+- `npm ci`
+- `npm run lint`
+- `npm run build`
+- `npx tsc --noEmit`
+
 ## Repository Notes
 
-The repository intentionally tracks source code, public assets, and app configuration only.
-
-Ignored from Git:
-
-- `node_modules/`
-- `.next/`
-- `.vercel/`
-- local `.env` files
-- TypeScript build info and other local artifacts
-
-No real secrets are stored in the repository. The committed `.env.example` file is a safe template only.
-
-## Implementation Notes
-
-- Shared personal/site metadata lives in `app/lib/site.ts`
-- SEO metadata is defined in `app/layout.tsx`
-- `vercel.json` contains production security headers
-- the contact form backend lives in `app/api/contact/route.ts`
-- most page content is currently stored directly in page/component files rather than a CMS
+- Source code, public assets, and project config are committed
+- Generated and local-only files such as `node_modules/`, `.next/`, `.vercel/`, and real `.env` files are ignored
+- No real SMTP secrets are stored in this repository; `.env.example` is a safe template only
 
 ## Status
 
-The project is production-deployed and actively configured for Vercel-based hosting.
+This project is live in production and configured for Vercel-based hosting.
