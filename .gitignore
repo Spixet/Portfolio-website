@@ -1,0 +1,37 @@
+# dependencies
+node_modules/
+
+# next.js build output
+.next/
+out/
+
+# production / misc build output
+build/
+dist/
+coverage/
+
+# env files
+.env*
+!.env.example
+
+# vercel
+.vercel/
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# typescript
+*.tsbuildinfo
+
+# editors / OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# misc
+*.pem

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1120" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617"/>
+      <stop offset="0.45" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" rx="36" fill="url(#bg)"/>
+  <rect x="56" y="56" width="1088" height="488" rx="28" fill="#0F172AB8" stroke="#94A3B83D"/>
+  <rect x="96" y="96" width="180" height="50" rx="25" fill="#60A5FA2E"/>
+  <text x="186" y="128" fill="#BFDBFE" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="3">PORTFOLIO</text>
+  <text x="100" y="240" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">Mohit Pandya</text>
+  <text x="100" y="300" fill="#CBD5E1" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="500">Full Stack Developer and AI Engineer</text>
+  <text x="100" y="372" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="24">
+    <tspan x="100" dy="0">Web apps, backend systems, AI features,</tspan>
+    <tspan x="100" dy="34">and thoughtful product execution.</tspan>
+  </text>
+  <text x="100" y="500" fill="#93C5FD" font-family="Arial, Helvetica, sans-serif" font-size="24">portfolioo-five-drab.vercel.app</text>
+  <text x="1100" y="500" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" text-anchor="end">@Spixet</text>
+</svg>

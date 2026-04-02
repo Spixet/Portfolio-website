@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" />
+      <feOffset dx="5" dy="5" />
+      <feComposite operator="out" in="SourceGraphic" />
+    </filter>
+  </defs>
+  
+  <!-- Main Background -->
+  <rect width="800" height="400" fill="url(#grad)" rx="15" ry="15"/>
+  
+  <!-- Pattern -->
+  <g fill="#FFFFFF" opacity="0.1">
+    <circle cx="40" cy="40" r="9.091593204777931" /><circle cx="40" cy="120" r="8.283459336784308" /><circle cx="40" cy="200" r="17.955027749536455" /><circle cx="40" cy="280" r="7.242555194536711" /><circle cx="40" cy="360" r="12.589209341777117" /><circle cx="120" cy="40" r="16.29341674613881" /><circle cx="120" cy="120" r="6.635416784449872" /><circle cx="120" cy="200" r="5.824807583901524" /><circle cx="120" cy="280" r="16.957580777212833" /><circle cx="120" cy="360" r="12.26091991589147" /><circle cx="200" cy="40" r="11.467199057726976" /><circle cx="200" cy="120" r="14.705978669743448" /><circle cx="200" cy="200" r="12.04186386318828" /><circle cx="200" cy="280" r="11.977603435163665" /><circle cx="200" cy="360" r="6.896867414508345" /><circle cx="280" cy="40" r="17.520522115534863" /><circle cx="280" cy="120" r="8.076936761709053" /><circle cx="280" cy="200" r="5.418721256083595" /><circle cx="280" cy="280" r="7.615150429989117" /><circle cx="280" cy="360" r="17.425508495964024" /><circle cx="360" cy="40" r="12.543989069045194" /><circle cx="360" cy="120" r="15.727151435759893" /><circle cx="360" cy="200" r="19.10254140959681" /><circle cx="360" cy="280" r="5.560212085481508" /><circle cx="360" cy="360" r="15.96660719742669" /><circle cx="440" cy="40" r="16.67620383581481" /><circle cx="440" cy="120" r="19.788431823589725" /><circle cx="440" cy="200" r="19.628604817325808" /><circle cx="440" cy="280" r="7.1903833048526264" /><circle cx="440" cy="360" r="7.646421095488977" /><circle cx="520" cy="40" r="10.22355255736839" /><circle cx="520" cy="120" r="13.146820061529068" /><circle cx="520" cy="200" r="18.248153069586056" /><circle cx="520" cy="280" r="9.37157357716601" /><circle cx="520" cy="360" r="14.51925106557017" /><circle cx="600" cy="40" r="6.423671734280053" /><circle cx="600" cy="120" r="7.190266172558546" /><circle cx="600" cy="200" r="15.520357889799074" /><circle cx="600" cy="280" r="5.902144193182965" /><circle cx="600" cy="360" r="9.10690363725724" /><circle cx="680" cy="40" r="5.964090253879154" /><circle cx="680" cy="120" r="9.962208290764895" /><circle cx="680" cy="200" r="18.282285899050187" /><circle cx="680" cy="280" r="15.22324161880522" /><circle cx="680" cy="360" r="19.147312773773876" /><circle cx="760" cy="40" r="12.75955353445112" /><circle cx="760" cy="120" r="12.897474680761594" /><circle cx="760" cy="200" r="19.916581485007207" /><circle cx="760" cy="280" r="19.09801876696432" /><circle cx="760" cy="360" r="16.696465827426678" />
+  </g>
+  
+  <!-- Center Icon and Text -->
+  <g transform="translate(400, 200)">
+    <!-- Icon Background -->
+    <circle cx="0" cy="-20" r="60" fill="#FFFFFF" opacity="0.2" />
+    
+    <!-- Icon -->
+    <g transform="translate(-24, -44) scale(2)" fill="#FFFFFF" stroke="#FFFFFF">
+      <path d="M21 9v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h7m5 2v5a2 2 0 01-2 2H5M11 3v4c0 1.1.9 2 2 2h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    
+    <!-- Project Title -->
+    <text x="0" y="80" font-family="'Arial', sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Web Project</text>
+  </g>
+  
+  <!-- Bottom Tag -->
+  <g transform="translate(400, 360)">
+    <rect x="-100" y="-20" width="200" height="40" rx="20" ry="20" fill="#FFFFFF" opacity="0.2"/>
+    <text x="0" y="5" font-family="'Arial', sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">VIEW PROJECT</text>
+  </g>
+</svg>

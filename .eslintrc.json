@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals"],
+  "ignorePatterns": [
+    ".next/**",
+    "node_modules/**",
+    "public/images/placeholders/project-placeholder-generator.js"
+  ]
+}

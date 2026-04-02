@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#4C1D95" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" />
+      <feOffset dx="5" dy="5" />
+      <feComposite operator="out" in="SourceGraphic" />
+    </filter>
+  </defs>
+  
+  <!-- Main Background -->
+  <rect width="800" height="400" fill="url(#grad)" rx="15" ry="15"/>
+  
+  <!-- Pattern -->
+  <g fill="#FFFFFF" opacity="0.1">
+    <circle cx="40" cy="40" r="6.646909150782903" /><circle cx="40" cy="120" r="5.580518773619288" /><circle cx="40" cy="200" r="15.976347951126149" /><circle cx="40" cy="280" r="8.458421596291906" /><circle cx="40" cy="360" r="15.291123129009227" /><circle cx="120" cy="40" r="7.622597313490287" /><circle cx="120" cy="120" r="15.157797659536966" /><circle cx="120" cy="200" r="16.011652162579438" /><circle cx="120" cy="280" r="14.579287249168422" /><circle cx="120" cy="360" r="5.195150569375423" /><circle cx="200" cy="40" r="14.777662206667364" /><circle cx="200" cy="120" r="7.453233387802504" /><circle cx="200" cy="200" r="5.465746882501698" /><circle cx="200" cy="280" r="9.467071383705257" /><circle cx="200" cy="360" r="14.757350552481437" /><circle cx="280" cy="40" r="15.38950865098082" /><circle cx="280" cy="120" r="17.606380141393295" /><circle cx="280" cy="200" r="8.9303251732827" /><circle cx="280" cy="280" r="10.265576489550732" /><circle cx="280" cy="360" r="7.674661665834192" /><circle cx="360" cy="40" r="19.178785422236558" /><circle cx="360" cy="120" r="8.507179446826148" /><circle cx="360" cy="200" r="15.061428036292359" /><circle cx="360" cy="280" r="6.464437008173007" /><circle cx="360" cy="360" r="12.88038410156788" /><circle cx="440" cy="40" r="8.504242859577216" /><circle cx="440" cy="120" r="9.221923875688784" /><circle cx="440" cy="200" r="18.38357494909642" /><circle cx="440" cy="280" r="15.120700603825922" /><circle cx="440" cy="360" r="10.997546640215871" /><circle cx="520" cy="40" r="19.162913379317807" /><circle cx="520" cy="120" r="6.308790159402258" /><circle cx="520" cy="200" r="10.715816959898085" /><circle cx="520" cy="280" r="19.574904847371876" /><circle cx="520" cy="360" r="10.743276443436036" /><circle cx="600" cy="40" r="7.294886840264725" /><circle cx="600" cy="120" r="16.669596745833715" /><circle cx="600" cy="200" r="8.246019795056995" /><circle cx="600" cy="280" r="18.540755077314373" /><circle cx="600" cy="360" r="5.148915929873623" /><circle cx="680" cy="40" r="15.151060135145665" /><circle cx="680" cy="120" r="5.339179037769693" /><circle cx="680" cy="200" r="18.640896530566224" /><circle cx="680" cy="280" r="9.982739184420534" /><circle cx="680" cy="360" r="19.625109911677065" /><circle cx="760" cy="40" r="5.512310221182952" /><circle cx="760" cy="120" r="19.26598133308012" /><circle cx="760" cy="200" r="11.480371803282564" /><circle cx="760" cy="280" r="11.175587693157656" /><circle cx="760" cy="360" r="12.006005834039373" />
+  </g>
+  
+  <!-- Center Icon and Text -->
+  <g transform="translate(400, 200)">
+    <!-- Icon Background -->
+    <circle cx="0" cy="-20" r="60" fill="#FFFFFF" opacity="0.2" />
+    
+    <!-- Icon -->
+    <g transform="translate(-24, -44) scale(2)" fill="#FFFFFF" stroke="#FFFFFF">
+      <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </g>
+    
+    <!-- Project Title -->
+    <text x="0" y="80" font-family="'Arial', sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF" text-anchor="middle">AI Recognition</text>
+  </g>
+  
+  <!-- Bottom Tag -->
+  <g transform="translate(400, 360)">
+    <rect x="-100" y="-20" width="200" height="40" rx="20" ry="20" fill="#FFFFFF" opacity="0.2"/>
+    <text x="0" y="5" font-family="'Arial', sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle">VIEW PROJECT</text>
+  </g>
+</svg>
