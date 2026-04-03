@@ -17,7 +17,7 @@ export default function Projects() {
       image: '/images/placeholders/ai-project.svg',
       tags: ['Python', 'OpenCV', 'TensorFlow', 'React'],
       category: 'ai',
-      githubUrl: 'https://github.com/Spixet/emotion-recognition',
+      githubUrl: 'https://github.com/Spixet/Emotion-recognition',
       liveUrl: 'https://emotion-recognition-demo.example.com',
       featured: true,
     },
@@ -70,7 +70,7 @@ export default function Projects() {
       image: '/images/placeholders/portfolio-project.svg',
       tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
       category: 'web',
-      githubUrl: 'https://github.com/Spixet/portfolio',
+      githubUrl: 'https://github.com/Spixet/Portfolio-website',
       liveUrl: 'https://yourname-portfolio.example.com',
     },
     {
